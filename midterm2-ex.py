@@ -16,7 +16,7 @@ def words_b(filename):
             #get the words in the line
             words = line.split(" ")
             for word in words:
-                if len(word) == 3 and word.startswith("b"):
+                if len(word) == 3 and word.startswith(""):
                     print(word)
     return
 

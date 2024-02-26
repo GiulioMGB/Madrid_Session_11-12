@@ -2,7 +2,7 @@ with open("book.txt") as file:
     text = file.read()
 file.close()
 
-#create a dictionary of word frequencies
+# create a dictionary of word frequencies
 word_freq = {}
 punctuation = ",.'!?;-()\n"
 
@@ -16,9 +16,9 @@ for line in file:
         word = word.lower()
         if len(word) < 4:
             continue
-        #check and add into dictionary
+        # check and add into dictionary
         if word in word_freq:
-            #Wrds in dictionary increase by 1
+            # words in dictionary increase by 1
             word_freq[word] += 1
         else:
             word_freq[word] = 1
@@ -29,7 +29,7 @@ top_frequencies = frequencies[:10]
 print(top_frequencies)
 
 
-#match the word
+# match the word
 for top_word in top_frequencies:
     for key in word_freq:
 
